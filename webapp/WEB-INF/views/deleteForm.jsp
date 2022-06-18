@@ -12,7 +12,7 @@
 		비밀번호 <input type="password" name="password" value=""> 
 		<button type="submit">확인</button><br>
 	<input type="hidden" name="no" value="${param.no}">
-	<a href="/guestbook4/addlist">메인으로 돌아가기</a>
+	<a href="/guestbook4/addList">메인으로 돌아가기</a>
 	</form>
 	
 </body>

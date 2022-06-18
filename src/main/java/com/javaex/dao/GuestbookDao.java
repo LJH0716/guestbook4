@@ -16,12 +16,12 @@ public class GuestbookDao {
 
 	// 리스트 가져오기
 	public List<GuestbookVo> getPersonList() {
+			System.out.println("guestbookDao>list()");
 			
+			List<GuestbookVo> guestList  = sqlSession.selectList("guestbook.selectList");
+			System.out.println(guestList);
 			
-			List<GuestbookVo> guestbookList  = sqlSession.selectList("guestbook.selectList");
-			System.out.println(guestbookList);
-			
-			return guestbookList;
+			return guestList;
 	}
 	
 	//등록(add)

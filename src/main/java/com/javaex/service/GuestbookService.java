@@ -22,9 +22,9 @@ public class GuestbookService {
 	//방명록 리스트
 		public List<GuestbookVo> getList(){
 			
-			List<GuestbookVo> guestbookList = guestbookDao.getPersonList();
-			
-			return guestbookList;
+			List<GuestbookVo> guestList = guestbookDao.getPersonList();
+			System.out.println(guestList);
+			return guestList;
 		}
 		
 		//방명록 등록

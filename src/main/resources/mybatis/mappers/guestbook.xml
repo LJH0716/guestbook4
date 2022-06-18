@@ -3,7 +3,7 @@
 <mapper namespace="guestbook">
 
 	<!-- 리스트 -->
-	<select id="selectList" resultType="com.javaex.vo.GuestbookVo">
+	<select id="selectList" resultType="GuestbookVo">
 		<![CDATA[ 
 				select no,
       				   name,
@@ -15,7 +15,7 @@
 	</select>
 
 	<!-- 등록 -->
-	<insert id="insert" parameterType="com.javaex.vo.GuestbookVo">
+	<insert id="insert" parameterType="GuestbookVo">
 		<![CDATA[ 
 				insert into guestbook
 				values (seq_guestbook_no.nextval, #{name}, #{password}, #{content}, sysdate)
@@ -23,7 +23,7 @@
 	</insert>
 
 	<!-- 삭제 -->
-	<delete id="delete" parameterType="com.javaex.vo.GuestbookVo">
+	<delete id="delete" parameterType="GuestbookVo">
 		<![CDATA[ 
 				delete from guestbook
 				where no= #{no}
