@@ -33,10 +33,10 @@ public class GuestbookDao {
 	}
 
 	//삭제(delete)
-		public int delete(int no) {
+		public int delete(GuestbookVo guestbookVo) {
 			
 
-			int count = sqlSession.delete("guestbook.delete", no);
+			int count = sqlSession.delete("guestbook.delete", guestbookVo);
 
 			return count;
 		}

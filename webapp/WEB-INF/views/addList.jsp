@@ -36,7 +36,7 @@
 			<tr>
 				<td width="50px">${gList.no }</td>
 				<td width="150px">${gList.name }</td>
-				<td width="300px">${gList.date }</td>
+				<td width="300px">${gList.regDate }</td>
 				<td>
 					<a href="/guestbook4/deleteForm?no=${gList.no }">삭제</a>
 				</td>

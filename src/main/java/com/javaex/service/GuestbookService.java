@@ -36,9 +36,9 @@ public class GuestbookService {
 		}
 		
 		//방명록 삭제
-		public int delete(int no) {
+		public int delete(GuestbookVo guestbookVo) {
 			
-			int count = guestbookDao.delete(no);
+			int count = guestbookDao.delete(guestbookVo);
 			
 			return count;
 		}
